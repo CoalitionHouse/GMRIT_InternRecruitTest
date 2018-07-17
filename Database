@@ -1,0 +1,26 @@
+#!/usr/bin/python
+
+import MySQLdb
+import random
+# Open database connection
+db = MySQLdb.connect("localhost","testuser","test123","TESTDB" )
+
+# prepare a cursor object using cursor() method
+cursor = db.cursor()
+cursor.execute("DROP TABLE IF EXISTS User")
+query = DBSession.query(Table)
+rowCount = int(query.count())
+randomRow = query.offset(int(rowCount*random.random())).first()
+
+# Create table as per requirement
+sql = """CREATE TABLE User (
+         Interestid CHAR(20) NOT NULL,
+         InterestnAme CHAR(20) NOT NULL,
+         Userid CHAR(20) NOT NULL,
+          )"""
+
+cursor.execute(sql)
+
+# disconnect from server
+db.close()
+
