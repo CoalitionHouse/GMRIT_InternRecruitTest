@@ -59,3 +59,5 @@ Tip:
 This is the end of Task 02.
 
 Commit all the files and create a pull request to submit your work.
+
+Update: If you are unable to create a pull request, compress all the files you have worked on in one .zip folder with the name "rollnumber_fullname" and upload to google drive. Share the link to this file (Publicly Viewable Only) in the submission link at https://www.coalition.house/recruitment-test.
