@@ -10,3 +10,5 @@ f=open("links.txt","w+")
 for link in soup.findAll('a', attrs={'href': re.compile("^http://")}):
     f.write(link.get('href'))
     f.write("\n")
+    
+f.close()
