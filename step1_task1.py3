@@ -24,8 +24,6 @@ def getLinks():
 
 
 
-
-
 @group()
 @pass_context
 def mysql(context):
@@ -44,7 +42,7 @@ def createdb(context,dbname,tablename):
     echo('Database "' + dbname + '" created successfully!')
     query = 'USE ' + dbname + ';'
     con.query(query)
-    query='CREATE TABLE '+tablename+'(interestid varchar(100),interestname varchar(10),userid varchar(100));'
+    query='CREATE TABLE '+tablename+'(interestid varchar(100),interestname varchar(20),userid varchar(100));'
     con.query(query)
     echo(tablename+'Table'+ created successfully!')
          
@@ -59,10 +57,11 @@ def populatedb(context,dbname):
         id = str(uuid.uuid4())
         interestid=hashlib.md5(id).hexdigest()
         interestname=userinterests[randint(0, 5)]
-        query='INSERT INTO user VALUES('"'+interestid+'", "'+interestname+'","'+id+'"'
+        query='INSERT INTO user VALUES('"'+interestid+'", "'+interestname+'","'+id+'");'
         con.query(query)
          
 if __name__=="__main__":
+    getlinks()
     mysql(obj={})
 
 
