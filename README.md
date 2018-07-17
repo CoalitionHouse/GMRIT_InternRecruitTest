@@ -12,7 +12,7 @@ Before you begin the task, ensure you have the following available with you.
 
 1. Perform this task as an individual only. Though you will work with a team during your internship, this particular task doesn't require any team activity to solve. 
 2. Do not ask any external person, friend or a relative for a solution or advice during the test period. You should find the solution to the given task by yourself **only**. The task is simple and basic for the kind of person we are looking for. If you are unable to finish the task, even though you complete this particular task by gathering solution made up by someone else, you are likely to be terminated from the internship as you will have to do similar task on a daily basis and it is not practical for you to ask the same source for the solutions each day.
-3. Complete this task within 80 minutes from when you begin the test.
+3. Complete this task within 120 minutes from when you begin the test.
 
 **Steps to complete the tasks:**
 
